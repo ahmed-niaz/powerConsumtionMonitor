@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Power Consumption Monitor</title>
+  </head>
+  <body>
+    <main
+      class="container mx-auto flex flex-col justify-center items-center max-h-screen gap-5 bg-gradient-to-r from-indigo-500" 
+    >
+      <h1 class="font-bold">Power Consumption Monitor</h1>
+      <div class="flex flex-col gap-5">
+        <div>
+          <input
+          type="text"
+          placeholder="Generator Model"
+          class="input input-bordered w-full"
+        />
+        <div class="flex justify-around">
+          <div class="form-control">
+            <label class="label cursor-pointer">
+              <span class="label-text">peakHour</span> 
+              <input type="checkbox" checked="checked" class="checkbox" />
+            </label>
+          </div>
+          <div class="form-control">
+            <label class="label cursor-pointer">
+              <span class="label-text">NonPeakHour</span> 
+              <input type="checkbox" checked="checked" class="checkbox" />
+            </label>
+          </div>
+        </div>
+        </div>
+        <div class="join">
+          <div>
+            <div>
+              <input
+                class="input input-bordered join-item"
+                placeholder="Power"
+              />
+            </div>
+          </div>
+          <select class="select select-bordered join-item w-full">
+            <option disabled selected>Watt</option>
+            <option value="">kilowatt (kW)</option>
+            <option value="">megawatt (MW)</option>
+            <option value="">gigawatt (GW)</option>
+            <option value="">terawatt (TW)</option>
+          </select>
+        </div>
+        <div class="join w-full">
+          <div>
+            <div class="w-full">
+              <input
+                class="input input-bordered join-item"
+                placeholder="Voltage"
+              />
+            </div>
+          </div>
+          <select class="select select-bordered join-item w-full">
+            <option disabled selected>volt</option>
+            <option value="">kilovolt (kV)</option>
+            <option value="">megavolt (MV)</option>
+            <option value="">gigavolt (GV)</option>
+            <option value="">teravolt (TV)</option>
+          </select>
+        </div>
+        <div class="join">
+          <div>
+            <div>
+              <input
+                class="input input-bordered join-item"
+                placeholder="Current"
+              />
+            </div>
+          </div>
+          <select class="select select-bordered join-item w-full">
+            <option disabled selected>ampere</option>
+            <option value="">kiloohm (kΩ)</option>
+            <option value="">megaampere (MA)</option>
+            <option value="">gigaampere (GA)</option>
+            <option value="">teraampere (TA)</option>
+          </select>
+        </div>
+        <div class="join">
+          <div>
+            <div>
+              <input
+                class="input input-bordered join-item"
+                placeholder="Resistance"
+              />
+            </div>
+          </div>
+          <select class="select select-bordered join-item w-full">
+            <option disabled selected>ohm</option>
+            <option>Kiloohm (kΩ)</option>
+            <option>Megaohm (kΩ)</option>
+            <option>Gigohm (kΩ)</option>
+            <option>Teraohm (kΩ)</option>
+          </select>
+        </div>
+        <div>
+          <h1>Description</h1>
+          <textarea
+            class="textarea textarea-bordered w-full"
+            placeholder="type here"
+          ></textarea>
+        </div>
+        <div class="flex justify-around">
+          <button class="btn">Submit</button>
+          <button class="btn">Cancel</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
